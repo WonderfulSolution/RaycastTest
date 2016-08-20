@@ -1,4 +1,4 @@
-RaycastTest
+# RaycastTest
 
 using UnityEngine; using System.Collections;
 
@@ -11,13 +11,13 @@ void Update () {
         {
             Debug.DrawLine(Camera.main.transform.position, hit.transform.position, Color.red, 0.1f, true);
             Debug.Log(hit.transform.name);
-    }
-}
+           }
+        }
 }
 
 How to use 3D Ray (novice)
 
-RaycastTest2D
+# RaycastTest2D
 
 using UnityEngine; using System.Collections;
 
