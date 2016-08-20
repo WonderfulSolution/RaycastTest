@@ -19,3 +19,25 @@ public class RaycastTest : MonoBehaviour {
 }
 
 如何使用Ray射線(新手)
+# RaycastTest2D
+
+using UnityEngine;
+using System.Collections;
+
+public class RaycastTest2 : MonoBehaviour {
+
+	void Update () {
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		if (Input.GetMouseButton(0))
+		{
+			RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 10);
+			if (hit.collider)
+			{
+				Debug.DrawLine(ray.origin, hit.transform.position, Color.blue, 0.1f, true);
+				Debug.Log(hit.transform.name);
+			}
+		}
+	}
+}
+
+如何使用2DRay射線(新手)
